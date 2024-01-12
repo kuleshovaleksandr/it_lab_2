@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <style>
+        #wrapper{
+        margin: 30px;
+        width: 500px;
+        }
+        span{
+        font-weight: bold;
+        }
+        div.button{
+        float: left;
+        width: 70px;
+        padding: 20px 20px;
+        }
+        input.button{
+        height: 30px;
+        width: 80px;
+        }
+        input[type=text]{
+        width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 4</h1>
+    <form>
+        <span>Choose products:</span><br>
+        <input type="checkbox" name="product" value="videocard"> Videocard 400$<br>
+        <input type="checkbox" name="product" value="motherboard"> Motherboard 200$<br>
+        <input type="checkbox" name="product" value="processor"> Processor 300$<br><br>
+
+        <span>Enter your address:</span><br>
+        <input type="text" id="address" name="address"><br><br>
+
+        <span>Choose payment method:</span><br>
+        <input type="radio" id="cash" name="payment" value="cash">
+        <label for="cash">in cash</label><br>
+        <input type="radio" id="credit-card" name="payment" value="creditCard">
+        <label for="credit-card">by credit card</label><br><br>
+
+        <span>Your feedback:</span><br>
+        <select id="feedbacks" name="feedbacks">
+            <option value="perfect">perfect</option>
+            <option value="good">good</option>
+            <option value="average">average</option>
+            <option value="bad">bad</option>
+            <option value="disgusting">disgusting</option>
+        </select><br><br>
+
+        <span>Wishes for ordering:</span><br>
+        <textarea name="wishes" rows="4" cols="70"></textarea>
+
+        <div id="button-container">
+            <div id="submit-container" class="button">
+                <input class="button" type="submit" id="submit" value="order">
+            </div>
+            <div id="reset-container" class="button">
+                <input class="button" type="reset" id="reset" value="clear">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
