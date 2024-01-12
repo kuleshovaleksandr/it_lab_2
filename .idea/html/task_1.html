@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1</title>
+    <style>
+        #wrapper{
+        margin: 30px;
+        width: 250px;
+        }
+        span{
+        font-weight: bold;
+        }
+        #submit-container{
+        width: 80px;
+        margin-left: auto;
+        margin-right: 0;
+        }
+        #submit{
+        height: 30px;
+        width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <div id="wrapper">
+        <form action="/blabla.html"  method="post">
+            <input type="text" id="firstname" name="firstname">
+            <label for="firstname"> - firstname</label><br><br>
+            <input type="text" id="lastname" name="lastname">
+            <label for="lastname"> - lastname</label><br><br>
+            <input type="text" id="patronymic" name="patronymic">
+            <label for="patronymic"> - patronymic</label><br><br>
+
+            <span>Sex: </span>
+            <label for="female">F</label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="male">M</label>
+            <input type="radio" id="male" name="sex" value="male">
+            <br><br>
+
+            <span>Languages you know</span><br>
+            <input type="checkbox" name="lang" value="eng"> English<br>
+            <input type="checkbox" name="lang" value="fr"> French<br>
+            <input type="checkbox" name="lang" value="sp"> Spanish<br>
+            <br>
+            <div id="submit-container">
+                <input type="submit" id="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

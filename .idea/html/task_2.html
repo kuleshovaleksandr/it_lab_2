@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2</title>
+    <style>
+        #wrapper{
+        margin: 30px;
+        width: 250px;
+        }
+        span{
+        font-weight: bold;
+        }
+        div.button{
+        float: left;
+        width: 70px;
+        padding: 20px 20px;
+        }
+        input.button{
+        height: 30px;
+        width: 80px;
+        }
+    </style>
+</head>
+<body>
+<h1>Task 1</h1>
+<div id="wrapper">
+    <form action="/blabla.html" method="post">
+        <input type="text" id="firstname" name="firstname">
+        <label for="firstname"> - firstname</label><br><br>
+        <input type="text" id="lastname" name="lastname">
+        <label for="lastname"> - lastname</label><br><br>
+
+        <span>Your feedback:</span><br>
+        <textarea name="feedback" rows="4" cols="80"></textarea>
+
+        <span>Your product group:</span><br>
+        <select id="products" name="products">
+            <option value="videocard">Videocard</option>
+            <option value="processor">Processor</option>
+            <option value="motherboard" selected>Motherboard</option>
+        </select>
+        <br>
+        <div id="button-container">
+            <div id="submit-container" class="button">
+                <input class="button" type="submit" id="submit" value="submit">
+            </div>
+            <div id="reset-container" class="button">
+                <input class="button" type="reset" id="reset" value="clear">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
